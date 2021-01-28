@@ -129,7 +129,7 @@ class HttpReadAloudService : BaseReadAloudService(),
                                 }
                             } catch (e: SocketTimeoutException) {
                                 removeSpeakCacheFile(fileName)
-                                runOnUiThread { toast("tts接口超时，尝试重新获取") }
+                                runOnUiThread { toast("") }
                                 downloadAudio()
                             } catch (e: ConnectException) {
                                 removeSpeakCacheFile(fileName)
