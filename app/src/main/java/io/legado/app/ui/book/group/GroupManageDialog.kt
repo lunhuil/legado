@@ -156,7 +156,7 @@ class GroupManageDialog : BaseDialogFragment(), Toolbar.OnMenuItemClickListener 
                 tvGroup.text = item.getManageName(context)
                 swShow.isChecked = item.show
                 tvDel.isGone = item.groupId < 0
-                swShow.isGone = item.groupId >= 0
+                swShow.isGone = false
             }
         }
 
