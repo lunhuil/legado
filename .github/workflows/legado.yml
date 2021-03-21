@@ -50,8 +50,8 @@ jobs:
       - name: Apk Live Together
         run: |
           echo "设置apk共存"
-          sed "s/'.release'/'.releaseA'/" $GITHUB_WORKSPACE/app/build.gradle  -i
-          sed 's/.release/.releaseA/'     $GITHUB_WORKSPACE/app/google-services.json -i
+          sed "s/'.release'/'.releaseB'/" $GITHUB_WORKSPACE/app/build.gradle  -i
+          sed 's/.release/.releaseB/'     $GITHUB_WORKSPACE/app/google-services.json -i
       - name: Build With Gradle
         run: |
           echo "开始进行release构建"
